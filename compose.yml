@@ -5,3 +5,7 @@ services:
   image : venkatreddy08/myapps:zomato
   ports:
    - "1111:3000"
+  deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
