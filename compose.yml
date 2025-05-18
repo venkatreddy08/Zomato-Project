@@ -1,0 +1,7 @@
+version : "3"
+services:
+ webapp:
+  container_name : zomato
+  image : venkatreddy08/myapps:zomato
+  ports:
+   - "1111:3000"
